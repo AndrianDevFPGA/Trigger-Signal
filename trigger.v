@@ -3,7 +3,7 @@
   email : Andrianoelisoa.rakotojaona@gmail.com
   Description : Generating a trigger signal using compter 
 */
-module (
+module trigger(
        clk,
        rst,
        tx
@@ -12,7 +12,7 @@ module (
   input clk;
   input rst;
   // output signal 
-  output tx;
+  output reg tx;
   
   reg [31:0]  counter ; // the counter can compte from 0 to 2 power of 32 
   
